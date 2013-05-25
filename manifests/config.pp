@@ -84,6 +84,7 @@ class smokeping::config {
               owner => smokeping,
               group => www-data,
               mode  => '0640',
+              force => true,
           }
           Concat::Fragment <<| tag == "smokeping-slave-secret" |>>
 
